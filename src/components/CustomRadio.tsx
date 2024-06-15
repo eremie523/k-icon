@@ -9,9 +9,9 @@ type CustomProps = {
 
 const CustomRadio = ({label, name, id, eventListener}: CustomProps) => {
   return (
-    <div className={`relative w-full customRadio`}>
+    <div className={`relative w-full customRadio h-full`}>
         <input type="radio" name={name} id={id} className={'overflow-hidden absolute w-0 h-0'} />
-        <label htmlFor={id} className={'radioCover flex flex-row items-center gap-2 justify-center w-full border rounded-md py-3 px-4 text-gray-500 text-sm font-semibold ring ring-slate-300'} onClick={(e) => {
+        <label htmlFor={id} className={'radioCover flex flex-row items-center gap-2 justify-center w-full h-full border rounded-md py-3 px-4 text-gray-500 text-sm font-semibold ring ring-slate-300'} onClick={(e) => {
           eventListener(id)
         }}>
             <div className={'p-1 border-2 rounded-full outer-circle flex items-center justify-center'}>
