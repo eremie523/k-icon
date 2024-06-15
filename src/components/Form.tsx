@@ -22,7 +22,7 @@ const Form = (props: Props) => {
 
                 <div className={'flex flex-col w-full text-start mt-6'}>
                     <label className={'font-bold px-1 text-gray-600'}>I will use for</label>
-                    <div className={'flex flex-row gap-6 mt-3'}>
+                    <div className={'flex flex-row sm:gap-6 gap-3 mt-3'}>
                         <CustomRadio label='Myself Only' name='category' id='self' eventListener={(val) => {setCategory(val)}} />
                         <CustomRadio label='My Team (5 only)' name='category' id='team' eventListener={(val) => {setCategory(val)}} />
                     </div>
